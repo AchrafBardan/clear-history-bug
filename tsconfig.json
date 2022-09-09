@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "jsx": "preserve",
     "strict": true,
     "target": "es2017",
     "module": "esnext",
@@ -21,6 +22,6 @@
     "emitDecoratorMetadata": true,
     "skipLibCheck": true
   },
-  "include": ["app", "types"],
+  "include": ["app/**/*", "types"],
   "exclude": ["node_modules", "platforms"]
 }

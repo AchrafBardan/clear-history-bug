@@ -1,4 +1,5 @@
 import Vue from 'nativescript-vue'
+import AppRootVue from './AppRoot.vue';
 import Home from './components/Home.vue'
 
 declare let __DEV__: boolean;
@@ -7,5 +8,5 @@ declare let __DEV__: boolean;
 Vue.config.silent = !__DEV__
 
 new Vue({
-  render: (h) => h('frame', [h(Home)]),
+  render: (h) => h(AppRootVue),
 }).$start()
